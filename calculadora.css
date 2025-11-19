@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(221, 221, 221);
 }
 
 .form {
@@ -16,7 +16,7 @@ body {
 }
 
 .calcCont {
-    background-color: gray;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,40 +24,50 @@ body {
     gap: 30px;
     height: 75%;
     width: 350px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .btn {
     height: 50px;
-    border-radius: 5px;
+    border-radius: 100px;
     border: none;
     font-weight: 600;
+    color: white;
+    background-color: rgb(73, 73, 73);
 }
 
-.htmlResult{
+.htmlResult {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     display: flex;
     align-self: flex-end;
     padding: 0% 10%;
     height: 50px;
+    color: white;
 }
 
+span {
+    font-style: italic;
+}
+
+.op {
+    font-size: 15px;
+    background-color: gray;
+}
 .op:hover {
-background-color: rgba(235, 230, 230, 0.547);
+    background-color: rgba(62, 62, 62, 0.547);
 }
 
-.igual{
-    background-color:darkcyan;
+.igual {
+    background-color: rgb(86, 138, 9);
 }
-.igual:hover{
-    background-color:rgba(0, 139, 139, 0.399);
-}
-
-.clear{
-    background-color: darkred;
-}
-.clear:hover{
-    background-color: rgba(139, 0, 0, 0.453);
+.igual:hover {
+    background-color: rgb(62, 98, 9);
 }
 
+.clear {
+    background-color: rgb(86, 138, 9);
+}
+.clear:hover {
+    background-color: rgb(62, 98, 9);
+}
