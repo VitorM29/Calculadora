@@ -87,3 +87,14 @@ span {
 .del:hover {
     background-color: rgb(62, 98, 9);
 }
+
+
+@media (max-width: 600px){
+.calcCont{
+    height: 65%;
+    width: 40%;
+}
+.htmlResult{
+    font-size: 30px;
+}
+}
