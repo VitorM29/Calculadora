@@ -1,30 +1,35 @@
 body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(221, 221, 221);
-}
-
-.form {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.calcCont {
-    background-color: black;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    height: 75%;
-    width: 350px;
-    border-radius: 30px;
+    background-color: rgb(221, 221, 221);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.calcCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.159);
+    gap: 0px;
+    height: 60%;
+    width: 20%;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 }
 
 .btn {
@@ -33,17 +38,23 @@ body {
     border: none;
     font-weight: 600;
     color: white;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
 .htmlResult {
+    text-align: end;
     font-family: "Roboto", sans-serif;
-    font-size: 50px;
     display: flex;
-    align-self: flex-end;
-    padding: 0% 10%;
-    height: 50px;
+    justify-content: end;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
     color: white;
+    background-color: black;
+    padding-right: 10px;
 }
 
 span {
@@ -52,22 +63,27 @@ span {
 
 .op {
     font-size: 15px;
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
 }
+
 .op:hover {
     background-color: rgba(62, 62, 62, 0.547);
 }
 
-.igual {
+.igual,
+.clear,
+.del {
     background-color: rgb(86, 138, 9);
 }
+
 .igual:hover {
     background-color: rgb(62, 98, 9);
 }
 
-.clear {
-    background-color: rgb(86, 138, 9);
-}
 .clear:hover {
+    background-color: rgb(62, 98, 9);
+}
+
+.del:hover {
     background-color: rgb(62, 98, 9);
 }
